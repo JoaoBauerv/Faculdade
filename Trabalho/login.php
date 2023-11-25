@@ -16,12 +16,17 @@ $stmt->execute();
 
 
 if ($stmt->fetchAll()) {
-    
+
     $_SESSION['login'] = $login;
     header('location:reciclagem2.php');
 } else {
     unset($_SESSION['login']);
     header('location:reciclagem.php');
 }
+
+
+	
+ $_SESSION['cpf_registrar'] = $login;
+  
 
 ?>

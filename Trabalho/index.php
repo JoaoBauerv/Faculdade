@@ -6,18 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reciclagem</title>
-
 </head>
 
-<body>
+<?php
 
+	$login = $_POST['login'];
+
+    session_start();
+    $_SESSION['cpf_registrar'] = $login;
+
+	
+
+  ?>
+
+
+<body>
 	<style>
     
 	
 		body {
 			background: black;
 		}
-
 		section {
 			background-color: #221f42;
 			color: white;
@@ -29,7 +38,6 @@
 			margin-right: -50%;
 			transform: translate(-50%, -50%);
 		}
-
 		.submit {
 			display: flex;
 			justify-content: center;
@@ -43,15 +51,10 @@
 			font-size: 10px;
 			margin: 0 auto;
 		}
-
   </style>
-
-
 <section>
     <div class="main">  	
-
 			<fieldset>
-
 				<div class="registro">
 					<form action="registra.php" method="post">
 						<label for="chk" aria-hidden="true">Registrar nova pessoa</label><br>
@@ -66,11 +69,8 @@
 				</div>
 				
 			</fieldset>
-
 			<br>
-
 			<fieldset>
-
 				<div class="Login" >
 					<form action="login.php" method="post">
 						<label for="chk" aria-hidden="true">Entrar</label> <br>
@@ -81,7 +81,6 @@
 						<input type="submit" value="Entrar" id="submit" class="submit"/>
 					</form>
 				</div>
-
 			</fieldset>	
 	</div>
 </section>
