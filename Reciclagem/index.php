@@ -12,7 +12,7 @@
 
 	session_start();
 
-	$login = $_POST['login'];
+	$login = $_SESSION['login'];
 
     $_SESSION['cpf_registrar'] = $login;
 
