@@ -107,6 +107,12 @@ $options = [
             ?>
         
         <br><br><br><br><br><br><br><br><br><br><br><br>
+        
+        <a href="tabela.php" >
+
+                <input type="submit" value="Pesagens" id="submit"  class="submit"/>
+        
+        </a>
 
         <form action="logout.php" method="post">
             

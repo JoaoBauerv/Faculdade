@@ -14,7 +14,6 @@
 
 	$login = $_POST['login'];
 
-    session_start();
     $_SESSION['cpf_registrar'] = $login;
 
 	if(isset($_GET['erro']) && $_GET['erro'] == 'login'){

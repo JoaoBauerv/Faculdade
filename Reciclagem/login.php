@@ -10,6 +10,7 @@ session_start();
 
 $login = $_POST['login'];
 
+$_SESSION = $_POST['login'];
 
 $sql = "SELECT * FROM  tb_pessoa WHERE nu_cpf = :login";
 
